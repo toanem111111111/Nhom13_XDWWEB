@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <script>
+        // var x1 = '{"a": 10, "b":"Nam 2022"}';
+        // var o1 = JSON.parse(x1);
+
+        // console.log("O1: ", o1);
+
+        // var x2 = '{"ten":"Nguyen Thien Dao", "NgaySinh" : {"ngay":22, "thang":2,"nam":2022} }';
+        // var o2 = JSON.parse(x2);
+        // console.log("O2: ", o2);
+
+        // // ES6
+        // var x3 = `{
+        //     "Lop": "D18",
+        //     "DSSV": [
+        //         {"id":1,"Ten": "A","nam sinh": 2000},
+        //         {"id":2,"Ten": "B","nam sinh": 2001},
+        //         {"id":3,"Ten": "C","nam sinh": 2002}
+        //     ]
+        // }`;
+
+        // var o3 = JSON.parse(x3);
+        // console.log("O3:", o3);
+
+        // var x3string = JSON.stringify(o3);
+        // console.log("O3 string: ", x3string);
+
+        function F1() {
+            // load get, post
+            $.ajax({
+                url: 'https://62145b9f89fad53b1f11729d.mockapi.io/book',
+                type: 'GET', // mac dinh la GET
+                dataType: 'json', // mac dinh la text
+                // mac dinh la rong 
+                // data: {kw : $('#kw').val()}
+                success: function(dataReturn) {
+                    console.log(dataReturn);
+                    $.each(dataReturn, function(k, v) {
+                        var s = `<div class="book" id="${v.id}">
+                        ${v.id} - ${v.price} <br>
+                        <img src="${v.img}" onClick="delImg(${v.id})"></div>`;
+                        $('#result1').append(s);
+
+                    });
+                }
+            });
+        }
+
+        function delImg(id) {
+
+            $.ajax({
+                url: 'https://62145b9f89fad53b1f11729d.mockapi.io/book/' + id,
+                type: 'DELETE', // mac dinh la GET
+                dataType: 'json', // mac dinh la text
+                // mac dinh la rong 
+                // data: {kw : $('#kw').val()}
+                success: function() {
+                    $(`#${id}`).hide();
+                    console.log('hide');
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
+        }
+    </script>
+
+    keyword <input type="text" id="kw" />
+    <input type="button" value="Search" onclick="F1()" />
+    <div id="result1">
+
+    </div>
+    <hr>
+
+    <div id="result2">
+
+    </div>
+
+
+</body>
+
+</html>

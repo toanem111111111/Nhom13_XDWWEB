@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng Ký</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css"  href="../CSS/style.css">
+	<link rel="stylesheet" type="text/css"  href="../Boostrap/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+<!--  -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #0452aa;
+  color: rgb(204, 198, 198);
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+
+<!--  -->
+
+
+
+
+</head>
+<body>
+<!--menu-->
+<div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="../Index.html"><img class="card-img-top" src="../img/LogobikeStore.png" style="height:50px;width:50%"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">	
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="../Index.html">Trang chủ <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sản Phẩm
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="XeTayGa/XeTayGa.html">Xe tay ga</a>
+          <a class="dropdown-item" href="XeSo/XeSo.html">Xe số</a>
+          <a class="dropdown-item" href="XeTayCon/XeTayCon.html">Xe tay côn</a>
+          <a class="dropdown-item" href="XeMoto/XeMoto.html">Xe Moto</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="SanPham.html">Xem thông tin</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="LienHe.html">Liên Hệ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="KhuyenMai.html">Khuyến Mãi</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="DangKy.html">Đăng Ký</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+</div>
+<!-- start form -->
+<div class ="container">
+	<div style="float:left width 48%">
+	<!-- viet bat dau tu day -->
+	</div>
+</div>
+<!-- finish form -->
+<br>
+<div class="container">
+<nav aria-label="breadcrumb" >
+  <ol class="breadcrumb">
+    <!-- <li class="breadcrumb-item"><a href="../Index.html">Trang chủ</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Đăng ký</li> -->
+  </ol>
+</nav>
+</div>
+
+<!--  -->
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1 align="center">Đăng Ký</h1>
+    <p align="center">Vui Lòng Điền Đầy Đủ Thông Tin Để Tạo Tài Khoản</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Nhập Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Nhập Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Nhập Lại Password</b></label>
+    <input type="password" placeholder="Nhập Lại Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>Bằng cách tạo một tài khoản, bạn đồng ý với <a href="#">Điều khoản & Quyền riêng tư</a>.</p>
+
+    <button type="submit" class="registerbtn">Đăng Ký</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Bạn Đã Có Tài Khoản? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+
+
+<!--  -->
+
+<div class="container-fluid">
+	<footer >
+		<p class="a1" ><a href="#" id="a1">Hotline: 029444444</a>&nbsp&nbsp&nbsp<b>|</b>&nbsp&nbsp&nbsp<a href="../Index.html" >Trang Chủ</a>&nbsp&nbsp&nbsp <b>|</b>&nbsp&nbsp&nbsp<a href="LienHe.html" >Liên Hệ &nbsp;</a></p>
+		<p class="a2">© 2020 BẢN QUYỀN THUỘC VỀ NHÓM 13 &nbsp; </p>
+		
+	</footer>
+</div>
+<script src="../Boostrap/jquery-3.3.1.min.js"></script>
+<script src="../Boostrap/js/bootstrap.min.js"></script>
+
+</body>		
+</html>

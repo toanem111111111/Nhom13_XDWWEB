@@ -1,0 +1,50 @@
+
+nav {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 50px;
+}
+
+header .card span.card-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    text-align: left;
+}
+
+body {
+    background-image: url("../images/halftone-yellow.png");
+}
+
+.container {
+
+}
+
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+
+.container {
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+.footer-copyright {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    padding-left: 20px;
+    padding-right: 500px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 45px;
+
+}
+

@@ -1,0 +1,575 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!--import bootstrap css-->
+    <link rel="stylesheet" href="datatables.min.css">
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="datatables.min.js"></script>
+
+</head>
+
+<body>
+    <!-- <div class="row p-5">
+        <table class="table table-primary" id="table">
+            <thead>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Fuga, corrupti!</td>
+                    <td>Sint, fugiat?</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Iste, ducimus?</td>
+                    <td>Labore, asperiores!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Accusantium, eius?</td>
+                    <td>Natus, laudantium?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Minima, dolor!</td>
+                    <td>Vero, similique.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Vel, fugiat!</td>
+                    <td>Sed, officia.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Minima, modi?</td>
+                    <td>Saepe, quam.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Et, quidem!</td>
+                    <td>Sint, eligendi?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Quod, minus.</td>
+                    <td>Iusto, praesentium.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Nemo, vero.</td>
+                    <td>Maxime, asperiores?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Mollitia, quos.</td>
+                    <td>Nam, minima?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Voluptatum, id!</td>
+                    <td>Aut, numquam.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Reprehenderit, consectetur?</td>
+                    <td>Esse, animi!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Laudantium, perferendis!</td>
+                    <td>Eos, nostrum.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Sapiente, ab!</td>
+                    <td>Dolor, corporis.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Quisquam, tenetur!</td>
+                    <td>Dicta, blanditiis?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Hic, ipsam.</td>
+                    <td>Quia, a.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Nemo, inventore?</td>
+                    <td>Perferendis, totam.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Quis, doloremque.</td>
+                    <td>Cupiditate, provident.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Minima, officia!</td>
+                    <td>Unde, asperiores.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Exercitationem, consequuntur?</td>
+                    <td>Laudantium, fugiat!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Deserunt, culpa!</td>
+                    <td>Magnam, consectetur.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Dolorem, eveniet.</td>
+                    <td>Explicabo, odio.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Quas, veritatis.</td>
+                    <td>Aliquam, blanditiis.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Molestias, alias!</td>
+                    <td>Natus, cupiditate?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Et, incidunt?</td>
+                    <td>Sapiente, sed.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Quia, eaque.</td>
+                    <td>Voluptatum, aliquid?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Delectus, provident.</td>
+                    <td>Velit, distinctio.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Officia, ipsum!</td>
+                    <td>Nihil, impedit?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Tempora, deleniti.</td>
+                    <td>Nisi, ipsa.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Nesciunt, velit.</td>
+                    <td>Earum, omnis?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Ut, dolor!</td>
+                    <td>Temporibus, at.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Fugit, nemo.</td>
+                    <td>Sit, ipsam!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Deleniti, harum?</td>
+                    <td>Perferendis, eos.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Sequi, assumenda!</td>
+                    <td>Dolorem, non?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Quod, excepturi.</td>
+                    <td>Quam, ducimus!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Commodi, veritatis?</td>
+                    <td>Soluta, earum.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Sed, totam?</td>
+                    <td>Alias, cum.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Nesciunt, inventore.</td>
+                    <td>Quam, possimus!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Voluptate, voluptatibus.</td>
+                    <td>Ex, temporibus?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Laboriosam, recusandae!</td>
+                    <td>Consectetur, hic.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Quaerat, dolor!</td>
+                    <td>Praesentium, delectus!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Illum, quas.</td>
+                    <td>Assumenda, vitae.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Ipsam, veritatis.</td>
+                    <td>Velit, fuga!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Accusantium, nesciunt.</td>
+                    <td>Sed, ratione.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Eaque, fuga.</td>
+                    <td>Eligendi, velit?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Dolor, aut.</td>
+                    <td>Alias, magnam?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Maiores, dolor!</td>
+                    <td>Nostrum, est!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Adipisci, ipsa.</td>
+                    <td>Quisquam, commodi.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Quisquam, natus!</td>
+                    <td>Minus, blanditiis.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Suscipit, magni!</td>
+                    <td>Totam, nostrum?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Autem, odit.</td>
+                    <td>Sint, id.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Tempora, excepturi.</td>
+                    <td>Voluptates, veritatis?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Veniam, ipsa.</td>
+                    <td>Doloremque, consectetur.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Ducimus, dolorum?</td>
+                    <td>Molestias, et?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Hic, sequi.</td>
+                    <td>Aperiam, perspiciatis.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Cupiditate, animi.</td>
+                    <td>Blanditiis, repudiandae.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Tempore, id.</td>
+                    <td>Harum, in?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Beatae, nulla!</td>
+                    <td>Eum, corporis.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Voluptatibus, eligendi?</td>
+                    <td>Ad, autem?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Voluptatum, porro.</td>
+                    <td>Accusamus, consectetur.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Deserunt, molestiae?</td>
+                    <td>Pariatur, provident.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Ipsum, deleniti.</td>
+                    <td>Minus, commodi.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Quos, sed!</td>
+                    <td>Eligendi, harum.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Velit, sed.</td>
+                    <td>Ullam, officia?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Neque, fugiat.</td>
+                    <td>Mollitia, accusamus?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Sit, libero!</td>
+                    <td>Blanditiis, in?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Excepturi, nam?</td>
+                    <td>Laboriosam, pariatur.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Atque, officiis?</td>
+                    <td>Cumque, laborum.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Eaque, perspiciatis!</td>
+                    <td>Magnam, id!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>At, illo?</td>
+                    <td>Saepe, totam!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Modi, magnam?</td>
+                    <td>Nesciunt, cum?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Minima, rerum?</td>
+                    <td>Itaque, impedit?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>In, ad.</td>
+                    <td>Rem, odit?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Minus, est?</td>
+                    <td>Fugit, earum.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Molestiae, nobis?</td>
+                    <td>Explicabo, minima!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Placeat, nobis.</td>
+                    <td>Hic, itaque.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Magnam, laborum.</td>
+                    <td>Perferendis, cum.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Sunt, asperiores!</td>
+                    <td>Placeat, neque?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Distinctio, amet?</td>
+                    <td>Esse, amet?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Sint, cupiditate?</td>
+                    <td>Ipsam, beatae.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Nostrum, eveniet.</td>
+                    <td>Molestiae, mollitia.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Itaque, quia?</td>
+                    <td>Quae, magnam?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Vel, eius?</td>
+                    <td>Quia, distinctio!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Accusamus, voluptatem.</td>
+                    <td>Porro, facere!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Odit, quaerat?</td>
+                    <td>Sed, consequatur!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Consectetur, a!</td>
+                    <td>Optio, quasi!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Laborum, aliquam!</td>
+                    <td>Ipsam, cum!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Maiores, animi?</td>
+                    <td>Non, ab.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Fuga, modi!</td>
+                    <td>A, deleniti.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Soluta, voluptates.</td>
+                    <td>Quo, provident?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Minima, harum!</td>
+                    <td>Dolores, culpa.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Autem, facilis.</td>
+                    <td>Impedit, accusamus.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Molestias, ratione?</td>
+                    <td>Eius, architecto!</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Magnam, ea?</td>
+                    <td>Impedit, dolor?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Atque, vero?</td>
+                    <td>Mollitia, ad?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Culpa, nemo?</td>
+                    <td>A, dicta?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Quae, soluta!</td>
+                    <td>Quia, incidunt.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Praesentium, officia?</td>
+                    <td>Architecto, vero?</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Qui, rerum.</td>
+                    <td>Cum, repellat.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Possimus, quo.</td>
+                    <td>Id, officia.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                    <td>Tempora, nulla.</td>
+                    <td>Minima, accusamus?</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+
+    <div class="row p-5 mt-3">
+        <table class="table table-primary" id="table1">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>created_at</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#table").DataTable({});
+            var table = $("#table1").DataTable({
+                processing: true,
+                serverSide: true,
+                ajax: {
+                    url: 'data.json',
+                    dataType: 'json',
+                    type: 'GET',
+                    dataSrc: ""
+                },
+                columns: [
+                    { data: 'id' },
+                    { data: 'name' },
+                    { data: 'avatar' },
+                    { data: 'createdAt'}
+                ],
+
+
+            });
+
+        })
+    </script>
+</body>
+
+</html>
